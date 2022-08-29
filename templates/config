@@ -5,12 +5,12 @@ clusters:
       server: ${api_url}
     name: ${cluster_name}
 contexts:
-  - name: kubernetes-admin-${cluster_name}@${cluster_name}
+  - name: ${client_username}-${cluster_name}@${cluster_name}
     context:
       cluster: ${cluster_name}
-      user: kubernetes-admin-${cluster_name}
+      user: ${client_username}-${cluster_name}
 users:
-  - name: kubernetes-admin-${cluster_name}
+  - name: ${client_username}-${cluster_name}
     user:
       client-certificate-data: ${base64encode(client_certificate)}
       client-key-data: ${base64encode(client_key)}

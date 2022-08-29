@@ -6,7 +6,8 @@ output "config" {
       api_url            = var.api_url
       ca_certificate     = var.ca_certificate
       client_certificate = var.client_certificate
-      client_key         = var.client_key 
+      client_key         = var.client_key
+      client_username    = var.client_username
     }
   )
 }
