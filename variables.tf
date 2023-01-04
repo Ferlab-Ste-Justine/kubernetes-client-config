@@ -26,4 +26,5 @@ variable "client_key" {
 variable "client_username" {
     type = string
     description = "Username the client with identity and authentify as"
+    default = "kubernetes-admin"
 }
